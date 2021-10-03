@@ -1,12 +1,15 @@
 .bodyProductos {
     background-color: $colorSecundario;
     font-family: 'Bebas Neue', cursive;
+    
 
 }
 
 .navegacionProductos {
     margin: 0;
     padding: 0;
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 .productos {
@@ -96,7 +99,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .productos {
         height: 130rem;
     }
@@ -109,4 +112,20 @@
         gap: 100px;
     }
 
+}
+
+
+@media (max-width: 575.98px){
+    .productos {
+        height: 130rem;
+    }
+
+    .products__imgcontainer {
+        height: 250px;
+        display: grid;
+        grid-template-columns: 250px 250px; 
+        grid-template-rows: 250px 250px 250px ;
+       column-gap: 20px;
+       row-gap: 100px;
+    }
 }

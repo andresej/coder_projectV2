@@ -1,4 +1,3 @@
-
 .tendencias {
     color: $colorPrimario;
     display: flex;
@@ -15,19 +14,54 @@
         display: flex;
         margin: 20px;
 
+        .tendencias__imgcontainer__img {
+            margin: 50px;
+            border-radius: 25px;
+            box-shadow: 7px 7px 7px $colorPrimario;
+        }
+
         .tendencias__imgcontainer__descripcion {
+            display: flex;
+            align-items: center;
+            text-align: center;
             font-size: 3rem;
             margin: 100px;
             width: 250px;
-            font-family:  "Bebas Neue", cursive;
+            height: 250px;
+            font-family: "Bebas Neue", cursive;
             color: #3d3737;
         }
     }
 }
 
-.tituloTendencia {
-    font-size: 4rem;
-    margin: 40px 20px 20px 50px;
-    color: $colorPrimario;
-    text-align: center;
+
+@media (max-width: 575.98px) {
+    .tendencias {
+        margin: 3rem;
+    
+
+        .tendencias__titulo {
+            font-size: 3rem;
+        }
+
+        .tendencias__imgcontainer {
+            margin: 10px;
+
+            .tendencias__imgcontainer__img {
+                margin: 25px;
+            }
+
+            .tendencias__imgcontainer__descripcion {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-size: 2.5rem;
+                margin: 50px;
+                width: 150px;
+            }
+        }
+
+    }
+
+
 }

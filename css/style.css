@@ -296,10 +296,10 @@ footer ul li a {
   height: 250px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
+  -ms-grid-columns: 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px;
+  -ms-grid-rows: 250px 250px;
+      grid-template-rows: 250px 250px;
   gap: 90px;
   margin: 40px 50px 0 50px;
   -webkit-box-pack: center;
@@ -321,7 +321,7 @@ footer ul li a {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .presentacion__titulo {
     color: #f6ead4;
     font-size: 3.5rem;
@@ -341,17 +341,41 @@ footer ul li a {
     margin: 20px;
   }
   .destacados {
-    height: 1000px;
+    height: 110rem;
   }
   .destacados .destacados__imgcontainer {
     height: 900px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 200px 200px;
-        grid-template-columns: 200px 200px;
-    -ms-grid-rows: 200px 200px 200px;
-        grid-template-rows: 200px 200px 200px;
+    -ms-grid-columns: 250px 250px;
+        grid-template-columns: 250px 250px;
+    -ms-grid-rows: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
     gap: 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ejemplos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 90rem;
+  }
+  .destacados {
+    height: 100rem;
+  }
+  .destacados .destacados__imgcontainer {
+    height: 900px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px 250px;
+        grid-template-columns: 250px 250px;
+    -ms-grid-rows: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+    gap: 50px;
   }
 }
 
@@ -382,19 +406,54 @@ footer ul li a {
   margin: 20px;
 }
 
+.tendencias .tendencias__imgcontainer .tendencias__imgcontainer__img {
+  margin: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 7px 7px 7px #f6ead4;
+          box-shadow: 7px 7px 7px #f6ead4;
+}
+
 .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   font-size: 3rem;
   margin: 100px;
   width: 250px;
+  height: 250px;
   font-family: "Bebas Neue", cursive;
   color: #3d3737;
 }
 
-.tituloTendencia {
-  font-size: 4rem;
-  margin: 40px 20px 20px 50px;
-  color: #f6ead4;
-  text-align: center;
+@media (max-width: 575.98px) {
+  .tendencias {
+    margin: 3rem;
+  }
+  .tendencias .tendencias__titulo {
+    font-size: 3rem;
+  }
+  .tendencias .tendencias__imgcontainer {
+    margin: 10px;
+  }
+  .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__img {
+    margin: 25px;
+  }
+  .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__descripcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px;
+    width: 150px;
+  }
 }
 
 .bodyProductos {
@@ -405,6 +464,8 @@ footer ul li a {
 .navegacionProductos {
   margin: 0;
   padding: 0;
+  font-size: 3rem;
+  text-decoration: none;
 }
 
 .productos {
@@ -489,7 +550,7 @@ footer ul li a {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .productos {
     height: 130rem;
   }
@@ -505,6 +566,24 @@ footer ul li a {
   }
 }
 
+@media (max-width: 575.98px) {
+  .productos {
+    height: 130rem;
+  }
+  .products__imgcontainer {
+    height: 250px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px 250px;
+        grid-template-columns: 250px 250px;
+    -ms-grid-rows: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 100px;
+  }
+}
+
 .contact {
   margin: 30px;
 }
@@ -512,6 +591,7 @@ footer ul li a {
 .contact .contact__titulo {
   font-size: 40px;
   margin-top: 70px;
+  padding-top: 20px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Bebas Neue";
@@ -544,9 +624,6 @@ footer ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .formulario {
@@ -605,6 +682,34 @@ footer ul li a {
   height: 60px;
 }
 
+@media (max-width: 767.98px) {
+  .contenedord_datos {
+    margin: 30px 30px auto 30px;
+  }
+  .formulario {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contenedord {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+  }
+  .contenedord .contenedord_datos {
+    margin: 10px;
+  }
+  .formulario {
+    margin: 30px auto;
+  }
+}
+
 .sobremi {
   color: #f6ead4;
   display: -webkit-box;
@@ -640,7 +745,7 @@ footer ul li a {
           box-shadow: 7px 7px 7px #f6ead4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .sobremi {
     display: -webkit-box;
     display: -ms-flexbox;

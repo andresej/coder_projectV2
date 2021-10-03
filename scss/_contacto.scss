@@ -4,6 +4,7 @@
     .contact__titulo {
         font-size: 40px;
         margin-top: 70px;
+        padding-top: 20px;
         text-align: center;
         text-transform: uppercase;
         font-family: "Bebas Neue";
@@ -27,7 +28,7 @@
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
     }
 }
 
@@ -82,5 +83,39 @@
 
     .formulario__input:focus {
         height: 60px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contenedord_datos {
+        margin: 30px 30px auto 30px;
+    }
+
+    .formulario {
+        margin: 30px
+    }
+
+
+}
+
+
+
+@media (max-width: 575.98px) {
+    .contenedord {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+
+        .contenedord_datos {
+
+            margin: 10px;
+        }
+
+    }
+
+    .formulario {
+
+        margin: 30px auto;
+
     }
 }

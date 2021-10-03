@@ -1,0 +1,49 @@
+.notFound {
+    display: flex;
+    align-items: center;
+    margin: 75px;
+    justify-content: center;
+
+    .notFound__items {
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            color: $colorPrimario;
+            text-shadow: 1px 1px 1px #ebebeb,
+                2px 2px 1px #ebebeb;
+
+        }
+
+        p {
+            font-size: 2.5rem;
+            color: $colorPrimario;
+        }
+
+        button {
+            width: 150px;
+            ;
+            height: 45px;
+            margin-top: 15px;
+            border-radius: 10px;
+            color: #0098cf;
+            text-transform: uppercase;
+            background: #ffafba;
+            font-family: "Bebas Neue";
+            background: linear-gradient(to left top, $colorSecundario, white);
+            font-size: 20px;
+            border: solid;
+        }
+
+        button:hover {
+            cursor: pointer;
+            transform: translateY(-3px);
+            transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+        }
+
+        button:active {
+            transform: translateY(3px);
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+/*@import "utilities";Always at the beginning with var, func, mixins*/
+@import "utilities";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "index";
+@import "tendencias";
+@import "productos";
+@import "contacto";
+@import "sobremi";
+@import "404notfound";
+
+
+/*
+@import "mediaqueries";
+Always at the end
+*/

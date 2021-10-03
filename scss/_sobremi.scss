@@ -1,0 +1,43 @@
+.sobremi {
+    color: $colorPrimario;
+    display: flex;
+    margin: 100px;
+
+    .sobremi__container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        padding: 80px;
+        font-family: "Patrick Hand";
+
+        .sobremi__container__titulo {
+            font-size: 4rem;
+        }
+
+        .sobremi__container__descripcion {
+            font-size: 2rem;
+        }
+    }
+}
+
+.imgSobremi {
+    border-radius: 30px 20px 30px 20px;
+    box-shadow: 7px 7px 7px $colorPrimario;
+}
+
+@media (max-width: 768px) {
+    .sobremi {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+        
+
+        .sobremi__container {
+            margin: 25px;
+            padding: 2rem;
+            
+        }
+        
+    }
+}

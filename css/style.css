@@ -1,0 +1,723 @@
+/*@import "utilities";Always at the beginning with var, func, mixins*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #b4a284;
+  font-family: "Bebas Neue", cursive;
+}
+
+#inicio {
+  background-color: #f6ead4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 250px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top: solid 5px #b4a284;
+}
+
+.whatsappMovible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 240px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.imagenLogo {
+  margin-right: 350px;
+}
+
+.navPosition {
+  padding: 5rem;
+  width: 800px;
+}
+
+.navPosition ul {
+  list-style: none;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navPosition ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.navPosition ul li:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.navegacionPrincipal li a {
+  text-decoration: none;
+  color: #b4a284;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  #inicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whatsappMovible {
+    height: 75px;
+  }
+  .imagenLogo {
+    margin: 0;
+    height: 150px;
+  }
+  .navPosition {
+    padding: 3rem;
+  }
+  .navPosition ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #f6ead4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b4a284;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 500px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #b4a284;
+  font-size: 2rem;
+}
+
+.footerSocialMedia {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footerSocialMedia h3 {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.footerSocialMedia img {
+  margin: 5px;
+}
+
+.irArriba {
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .navegacionFinal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 10rem;
+    text-align: center;
+  }
+  .irArriba {
+    height: 2.5rem;
+  }
+  .footerSocialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.presentacion {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.presentacion .presentacion__titulo {
+  color: #f6ead4;
+  font-size: 3.5rem;
+  word-spacing: 0.5rem;
+  margin: 20px;
+}
+
+.ejemplos {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ejemplos .ejemplos__contenedor__img {
+  margin: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 7px 7px 7px #f6ead4;
+          box-shadow: 7px 7px 7px #f6ead4;
+}
+
+.ejemplos .ejemplos__contenedor__img:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.destacados {
+  color: #f6ead4;
+  font-size: 3rem;
+  height: 800px;
+}
+
+.destacados .destacados__titulo {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.destacados .destacados__imgcontainer {
+  height: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+  gap: 90px;
+  margin: 40px 50px 0 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destacados .destacados__imgcontainer .destacados__imgcontainer__img {
+  border: 2px solid #f6ead4;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.destacados .destacados__imgcontainer .destacados__imgcontainer__img:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+@media (max-width: 768px) {
+  .presentacion__titulo {
+    color: #f6ead4;
+    font-size: 3.5rem;
+    word-spacing: 0.5rem;
+    margin: 20px;
+    text-align: center;
+  }
+  .ejemplos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 90rem;
+  }
+  .ejemplos__contenedor .ejemplos__contenedor__img {
+    margin: 20px;
+  }
+  .destacados {
+    height: 1000px;
+  }
+  .destacados .destacados__imgcontainer {
+    height: 900px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    gap: 100px;
+  }
+}
+
+.tendencias {
+  color: #f6ead4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+}
+
+.tendencias .tendencias__titulo {
+  font-size: 4rem;
+  margin: 20px;
+}
+
+.tendencias .tendencias__imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.tendencias .tendencias__imgcontainer .tendencias__imgcontainer__descripcion {
+  font-size: 3rem;
+  margin: 100px;
+  width: 250px;
+  font-family: "Bebas Neue", cursive;
+  color: #3d3737;
+}
+
+.tituloTendencia {
+  font-size: 4rem;
+  margin: 40px 20px 20px 50px;
+  color: #f6ead4;
+  text-align: center;
+}
+
+.bodyProductos {
+  background-color: #b4a284;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navegacionProductos {
+  margin: 0;
+  padding: 0;
+}
+
+.productos {
+  margin: 30px;
+  height: 900px;
+}
+
+.productos .productos__titulo {
+  color: #f6ead4;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.productsStyle {
+  margin: 40px;
+  color: #f6ead4;
+}
+
+.productsStyle button {
+  color: #f6ead4;
+  font-size: 2.5rem;
+}
+
+.products__imgcontainer {
+  height: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px;
+  -ms-grid-rows: 250px 250px;
+      grid-template-rows: 250px 250px;
+  gap: 100px;
+  margin: 30px 50px 0 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__imgcontainer .products__imgcontainer__img {
+  border: 2px solid #f6ead4;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.products__imgcontainer .products_imgcontainer_price {
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid #f6ead4;
+  padding: 1px;
+  border-radius: 15px;
+}
+
+.container_one {
+  position: relative;
+}
+
+.image1 {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container_one:hover .overlay {
+  opacity: 1;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .productos {
+    height: 130rem;
+  }
+  .products__imgcontainer {
+    height: 250px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px 250px;
+        grid-template-columns: 250px 250px;
+    -ms-grid-rows: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+    gap: 100px;
+  }
+}
+
+.contact {
+  margin: 30px;
+}
+
+.contact .contact__titulo {
+  font-size: 40px;
+  margin-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  color: #f6ead4;
+}
+
+.contenedord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedord .contenedord_datos {
+  background-color: #f6ead4;
+  padding: 30px;
+  margin: 30px 30px auto 100px;
+  border-radius: 4px;
+  font-family: "Bebas Neue";
+  color: #b4a284;
+  -webkit-box-shadow: 7px 13px 7px #b4a284;
+          box-shadow: 7px 13px 7px #b4a284;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario {
+  background-color: #f6ead4;
+  width: 400px;
+  padding: 30px;
+  margin: 30px 30px 30px 0;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  font-family: "Bebas Neue";
+  color: #b4a284;
+  -webkit-box-shadow: 7px 13px 7px #b4a284;
+          box-shadow: 7px 13px 7px #b4a284;
+}
+
+.formulario .formulario__input {
+  width: 100%;
+  background-color: #f6ead4;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #b4a284;
+  font-size: 18px;
+  font-family: "Bebas Neue";
+}
+
+.formulario .formulario__button {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  color: #f6ead4;
+  text-transform: uppercase;
+  background: #b4a284;
+  font-family: "Bebas Neue";
+  background: -webkit-gradient(linear, right bottom, left top, from(#b4a284), to(white));
+  background: linear-gradient(to left top, #b4a284, white);
+  font-size: 20px;
+  border: none;
+}
+
+.formulario .formulario__button:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.formulario .formulario__button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.formulario .formulario__input:focus {
+  height: 60px;
+}
+
+.sobremi {
+  color: #f6ead4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px;
+}
+
+.sobremi .sobremi__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+  padding: 80px;
+  font-family: "Patrick Hand";
+}
+
+.sobremi .sobremi__container .sobremi__container__titulo {
+  font-size: 4rem;
+}
+
+.sobremi .sobremi__container .sobremi__container__descripcion {
+  font-size: 2rem;
+}
+
+.imgSobremi {
+  border-radius: 30px 20px 30px 20px;
+  -webkit-box-shadow: 7px 7px 7px #f6ead4;
+          box-shadow: 7px 7px 7px #f6ead4;
+}
+
+@media (max-width: 768px) {
+  .sobremi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sobremi .sobremi__container {
+    margin: 25px;
+    padding: 2rem;
+  }
+}
+
+.notFound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notFound .notFound__items {
+  text-align: center;
+}
+
+.notFound .notFound__items h1 {
+  font-size: 4rem;
+  color: #f6ead4;
+  text-shadow: 1px 1px 1px #ebebeb, 2px 2px 1px #ebebeb;
+}
+
+.notFound .notFound__items p {
+  font-size: 2.5rem;
+  color: #f6ead4;
+}
+
+.notFound .notFound__items button {
+  width: 150px;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 10px;
+  color: #0098cf;
+  text-transform: uppercase;
+  background: #ffafba;
+  font-family: "Bebas Neue";
+  background: -webkit-gradient(linear, right bottom, left top, from(#b4a284), to(white));
+  background: linear-gradient(to left top, #b4a284, white);
+  font-size: 20px;
+  border: solid;
+}
+
+.notFound .notFound__items button:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.notFound .notFound__items button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+/*
+@import "mediaqueries";
+Always at the end
+*/
+/*# sourceMappingURL=style.css.map */

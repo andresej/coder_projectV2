@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: $colorSecundario;
+    font-family: "Bebas Neue", cursive;
+}
+
+
+
+#inicio {
+    background-color: $colorPrimario;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 250px;
+    align-items: flex-end;
+    border-top: solid 5px $colorSecundario;
+}
+
+.whatsappMovible {
+    display: flex;
+    height: 240px;
+    flex-direction: column;
+}
+
+.imagenLogo {
+    margin-right: 350px;
+}
+
+.navPosition {
+    padding: 5rem;
+    width: 800px;
+
+    ul {
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            display: inline-block;
+            position: relative;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        li:hover {
+            cursor: pointer;
+            transform: translateY(3px);
+            transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+        }
+    }
+}
+
+.navegacionPrincipal li a {
+    text-decoration: none;
+    color: $colorSecundario;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    #inicio {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+
+    .whatsappMovible {
+        height: 75px;
+    }
+
+    .imagenLogo {
+        margin: 0; height: 150px;
+    }
+
+    .navPosition {
+        padding: 3rem;
+    }
+
+    .navPosition ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

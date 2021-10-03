@@ -1,0 +1,107 @@
+
+.presentacion {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+
+    .presentacion__titulo {
+        color: $colorPrimario;
+        font-size: 3.5rem;
+        word-spacing: 0.5rem;
+        margin: 20px;
+    }
+}
+
+.ejemplos {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+    .ejemplos__contenedor__img {
+        margin: 50px;
+        border-radius: 25px;
+        box-shadow: 7px 7px 7px $colorPrimario;
+
+    }
+
+    .ejemplos__contenedor__img:hover {
+        cursor: pointer;
+        transform: translateY(3px);
+        transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    }
+}
+
+
+
+.destacados {
+    color: $colorPrimario;
+    font-size: 3rem;
+    height: 800px;
+
+    .destacados__titulo {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    .destacados__imgcontainer {
+        height: 250px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        gap: 90px;
+        margin: 40px 50px 0 50px;
+        justify-content: center;
+
+        .destacados__imgcontainer__img {
+            border: 2px solid $colorPrimario;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .destacados__imgcontainer__img:hover {
+            cursor: pointer;
+            transform: translateY(3px);
+            transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+   
+    .presentacion__titulo {
+        color: $colorPrimario;
+        font-size: 3.5rem;
+        word-spacing: 0.5rem;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .ejemplos {
+        display: flex;
+        flex-wrap: wrap;
+        height: 90rem;
+        
+    }
+
+    .ejemplos__contenedor .ejemplos__contenedor__img {
+        margin: 20px
+    }
+
+    .destacados {
+        height: 1000px;
+    }
+
+    .destacados .destacados__imgcontainer {
+        height: 900px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        gap: 100px;
+
+    }
+}

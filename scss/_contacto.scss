@@ -1,0 +1,86 @@
+.contact {
+    margin: 30px;
+
+    .contact__titulo {
+        font-size: 40px;
+        margin-top: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Bebas Neue";
+        color: $colorPrimario;
+    }
+}
+
+.contenedord {
+    display: flex;
+    justify-content: center;
+
+
+    .contenedord_datos {
+        background-color: $colorPrimario;
+        padding: 30px;
+        margin: 30px 30px auto 100px;
+        border-radius: 4px;
+        font-family: "Bebas Neue";
+        color: $colorSecundario;
+        box-shadow: 7px 13px 7px $colorSecundario;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.formulario {
+    background-color: $colorPrimario;
+    width: 400px;
+    padding: 30px;
+    margin: 30px 30px 30px 0;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: "Bebas Neue";
+    color: $colorSecundario;
+    box-shadow: 7px 13px 7px $colorSecundario;
+
+
+
+    .formulario__input {
+        width: 100%;
+        background-color: $colorPrimario;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 1px solid $colorSecundario;
+        font-size: 18px;
+        font-family: "Bebas Neue";
+    }
+
+    .formulario__button {
+        width: 100%;
+        height: 45px;
+        margin-top: 15px;
+        border-radius: 4px;
+        color: $colorPrimario;
+        text-transform: uppercase;
+        background: $colorSecundario;
+        font-family: "Bebas Neue";
+        background: linear-gradient(to left top, $colorSecundario, white);
+        font-size: 20px;
+        border: none;
+    }
+
+    .formulario__button:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    }
+
+    .formulario__button:active {
+        transform: translateY(3px);
+    }
+
+    .formulario__input:focus {
+        height: 60px;
+    }
+}

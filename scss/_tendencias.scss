@@ -1,0 +1,33 @@
+
+.tendencias {
+    color: $colorPrimario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+    .tendencias__titulo {
+        font-size: 4rem;
+        margin: 20px;
+    }
+
+    .tendencias__imgcontainer {
+        display: flex;
+        margin: 20px;
+
+        .tendencias__imgcontainer__descripcion {
+            font-size: 3rem;
+            margin: 100px;
+            width: 250px;
+            font-family:  "Bebas Neue", cursive;
+            color: #3d3737;
+        }
+    }
+}
+
+.tituloTendencia {
+    font-size: 4rem;
+    margin: 40px 20px 20px 50px;
+    color: $colorPrimario;
+    text-align: center;
+}

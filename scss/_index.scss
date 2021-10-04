@@ -120,8 +120,33 @@
         height: 900px;
         display: grid;
         grid-template-columns: 250px 250px;
-        grid-template-rows: 250px 250px 250px ;
+        grid-template-rows: 250px 250px 250px;
         gap: 50px;
 
+    }
+}
+
+@media (max-width: 375px) {
+
+    .fotoTres {
+        width: 350px;
+        height: 230px;
+    }
+
+    .ejemplos {
+
+        height: 120rem;
+    }
+
+    .destacados {
+        height: 175rem;
+    }
+
+    .destacados .destacados__imgcontainer {
+
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap: 25px;
     }
 }

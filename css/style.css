@@ -379,6 +379,28 @@ footer ul li a {
   }
 }
 
+@media (max-width: 375px) {
+  .fotoTres {
+    width: 350px;
+    height: 230px;
+  }
+  .ejemplos {
+    height: 120rem;
+  }
+  .destacados {
+    height: 175rem;
+  }
+  .destacados .destacados__imgcontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px;
+        grid-template-columns: 250px;
+    -ms-grid-rows: 250px 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px 250px;
+    gap: 25px;
+  }
+}
+
 .tendencias {
   color: #f6ead4;
   display: -webkit-box;
@@ -453,6 +475,41 @@ footer ul li a {
     font-size: 2.5rem;
     margin: 50px;
     width: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tendencias {
+    margin: 3rem;
+  }
+  .tendencias .tendencias__titulo {
+    font-size: 3rem;
+  }
+  .tendencias .tendencias__imgcontainer {
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__img {
+    margin: 25px;
+    width: 133px;
+    height: 200px;
+  }
+  .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__descripcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px;
+    width: 100px;
   }
 }
 
@@ -584,6 +641,22 @@ footer ul li a {
   }
 }
 
+@media (max-width: 375px) {
+  .productos {
+    height: 221rem;
+  }
+  .products__imgcontainer {
+    height: 250px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px;
+        grid-template-columns: 250px;
+    -ms-grid-rows: 250px 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px 250px;
+    gap: 50px;
+  }
+}
+
 .contact {
   margin: 30px;
 }
@@ -710,6 +783,12 @@ footer ul li a {
   }
 }
 
+@media (max-width: 375px) {
+  .formulario {
+    width: 350px;
+  }
+}
+
 .sobremi {
   color: #f6ead4;
   display: -webkit-box;
@@ -762,6 +841,17 @@ footer ul li a {
   .sobremi .sobremi__container {
     margin: 25px;
     padding: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .imgSobremi {
+    height: 300px;
+    width: 300px;
+  }
+  .sobremi__container__descripcion {
+    font-size: 2rem;
+    width: 300px;
   }
 }
 

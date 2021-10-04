@@ -129,3 +129,15 @@
        row-gap: 100px;
     }
 }
+
+@media (max-width: 375px){ .productos {
+    height: 221rem;
+}
+
+.products__imgcontainer {
+    height: 250px;
+    display: grid;
+    grid-template-columns: 250px; 
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 50px;
+}}

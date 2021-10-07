@@ -399,6 +399,9 @@ footer ul li a {
 }
 
 @media (max-width: 375px) {
+  .ejemplos__contenedor .ejemplos__contenedor__img {
+    margin: 0;
+  }
   .fotoTres {
     width: 350px;
     height: 230px;
@@ -407,7 +410,7 @@ footer ul li a {
     height: 120rem;
   }
   .destacados {
-    height: 175rem;
+    height: 180rem;
   }
   .destacados .destacados__imgcontainer {
     display: -ms-grid;

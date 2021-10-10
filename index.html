@@ -5,21 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Gaby Moreno Accesorios- Inicio</title>
-    <meta name="description" content="Gaby Moreno Accesorios. Un mundo de infinitas posibilidades creativas. Creamos experiencias alegres y fascinantes. Joyeria artesanal hecho con AMOR.">
-    <meta name="keywords" content="joyeria, artesanal, ultimos, pulseras, collares, holders, aros, diademas, santa cruz, bolivia">
+    <meta name="description"
+        content="Gaby Moreno Accesorios. Un mundo de infinitas posibilidades creativas. Creamos experiencias alegres y fascinantes. Joyeria artesanal hecho con AMOR.">
+    <meta name="keywords"
+        content="joyeria, artesanal, ultimos, pulseras, collares, holders, aros, diademas, santa cruz, bolivia">
 </head>
 
 <body>
 
 
-    <header id="inicio" >
-       
-            <<img src="https://loading.io/icon/8ecrem" class="whatsappMovible" alt="whatsapp_logo" height="50" />
-        
+    <header id="inicio">
+        <div class="whatsappMovible">
+            <img src="../imagenes/whatsapp.png" alt="whatsapp_logo" height="50" />
+            <p>Contactanos</p>
+        </div>
         <img class="imagenLogo" src="imagenes/gaby_logo.png" alt="gaby_logo" height="200" />
         <nav class="navPosition">
             <ul class="navegacionPrincipal">
@@ -51,18 +54,18 @@
     </section>
 
     <section class="ejemplos">
-        <div class="ejemplos__contenedor">
+        <div class="ejemplos__contenedor" data-aos="fade-right"  data-aos-delay="100" >
             <img class="ejemplos__contenedor__img"
                 src="https://images.unsplash.com/photo-1561060511-78b14b799fe1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGpld2Vscnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                 alt="foto1" height="350">
         </div>
-        <div class="ejemplos__contenedor">
+        <div class="ejemplos__contenedor" data-aos="fade-down"  data-aos-delay="100">
             <img class="ejemplos__contenedor__img"
                 src="https://images.unsplash.com/photo-1565515695526-93d8688db6ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80"
                 alt="foto2" height="350">
         </div>
-        <div class="ejemplos__contenedor">
-            <img class="ejemplos__contenedor__img fotoTres"
+        <div class="ejemplos__contenedor" data-aos="fade-left" data-aos-delay="100">
+            <img class="ejemplos__contenedor__img fotoTres"  
                 src="https://images.unsplash.com/photo-1536502829567-baf877a670b5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0ZXNhbmFsJTIwamV3ZWxyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                 alt="foto3" height="350">
         </div>
@@ -108,21 +111,24 @@
 
         <div class="footerSocialMedia">
             <h3>
-                SEGUIME!
+                MIS REDES SOCIALES!
             </h3>
+            <div>
+                <a href="https://www.instagram.com/gabymoreno.bo" target="_blank">
+                    <img src="imagenes/instagram.png" alt="instagram_logo" height="30"></a>
 
-            <a href="https://www.instagram.com/gabymoreno.bo" target="_blank"><img src="imagenes/instagram.png"
-                    alt="instagram_logo" height="50"></a>
-
-            <img src="imagenes/whatsapp.png" alt="whatsapp_logo" height="50" />
-
-            <img src="imagenes/facebook.png" alt="facebook_logo" height="50" />
+                <a href="https://www.facebook.com/gabymoreno.bo/" target="_blank">
+                    <img src="../imagenes/facebook.png" alt="facebook_logo" height="30"></a>
+            </div>
 
         </div>
 
 
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

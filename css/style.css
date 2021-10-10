@@ -38,7 +38,6 @@ html {
   bottom: 15px;
   right: 15px;
   z-index: 999999;
-  font-size: 55px;
   cursor: pointer;
 }
 
@@ -102,7 +101,10 @@ html {
             align-items: center;
   }
   .whatsappMovible {
-    height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
   }
   .imagenLogo {
     margin: 0;
@@ -127,11 +129,20 @@ html {
   .navPosition {
     width: auto;
   }
+  .whatsappMovible {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
 }
 
 @media (max-width: 375px) {
   .navPosition {
     width: auto;
+  }
+  .whatsappMovible {
+    bottom: 2px;
+    right: 2px;
   }
 }
 
@@ -172,15 +183,19 @@ footer ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footerSocialMedia h3 {
-  margin: 10px;
+  margin: 5px;
   font-size: 2rem;
 }
 
@@ -627,6 +642,11 @@ footer ul li a {
   transform: translate(-50%, -50%);
 }
 
+.navegacionFinal {
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 767.98px) {
   .productos {
     height: 130rem;
@@ -827,7 +847,6 @@ footer ul li a {
           flex-direction: column;
   margin: 50px;
   padding: 80px;
-  font-family: "Patrick Hand";
 }
 
 .sobremi .sobremi__container .sobremi__container__titulo {
@@ -835,7 +854,7 @@ footer ul li a {
 }
 
 .sobremi .sobremi__container .sobremi__container__descripcion {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .imgSobremi {

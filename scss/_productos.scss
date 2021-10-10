@@ -1,7 +1,7 @@
 .bodyProductos {
     background-color: $colorSecundario;
     font-family: 'Bebas Neue', cursive;
-    
+
 
 }
 
@@ -98,6 +98,10 @@
 
 }
 
+.navegacionFinal {
+    padding: 0;
+    margin: 0;
+}
 
 @media (max-width: 767.98px) {
     .productos {
@@ -115,7 +119,7 @@
 }
 
 
-@media (max-width: 575.98px){
+@media (max-width: 575.98px) {
     .productos {
         height: 130rem;
     }
@@ -123,21 +127,23 @@
     .products__imgcontainer {
         height: 250px;
         display: grid;
-        grid-template-columns: 250px 250px; 
-        grid-template-rows: 250px 250px 250px ;
-       column-gap: 20px;
-       row-gap: 100px;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+        column-gap: 20px;
+        row-gap: 100px;
     }
 }
 
-@media (max-width: 375px){ .productos {
-    height: 221rem;
-}
+@media (max-width: 375px) {
+    .productos {
+        height: 221rem;
+    }
 
-.products__imgcontainer {
-    height: 250px;
-    display: grid;
-    grid-template-columns: 250px; 
-    grid-template-rows: 250px 250px 250px 250px;
-    gap: 50px;
-}}
+    .products__imgcontainer {
+        height: 250px;
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap: 50px;
+    }
+}

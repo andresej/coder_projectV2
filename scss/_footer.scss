@@ -27,12 +27,13 @@ footer {
 .footerSocialMedia {
     width: 500px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
 }
 
 .footerSocialMedia h3 {
-    margin: 10px;
+    margin: 5px;
     font-size: 2rem;
 }
 

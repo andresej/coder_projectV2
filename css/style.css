@@ -42,9 +42,14 @@ html:focus-within {
   cursor: pointer;
 }
 
+.whatsappMovible img {
+  height: 50px;
+}
+
 .imagenLogo {
   margin-left: 150px;
   margin-bottom: 1rem;
+  height: 150px;
 }
 
 .navPosition {
@@ -178,6 +183,10 @@ footer ul li a {
   font-size: 2rem;
 }
 
+.footerLogo {
+  height: 100px;
+}
+
 .footerSocialMedia {
   width: 500px;
   display: -webkit-box;
@@ -201,6 +210,7 @@ footer ul li a {
 
 .footerSocialMedia img {
   margin: 5px;
+  height: 30px;
 }
 
 .irArriba {
@@ -304,6 +314,7 @@ footer ul li a {
   border-radius: 25px;
   -webkit-box-shadow: 7px 7px 7px #f6ead4;
           box-shadow: 7px 7px 7px #f6ead4;
+  height: 350px;
 }
 
 .ejemplos .ejemplos__contenedor__img:hover {
@@ -344,6 +355,7 @@ footer ul li a {
   border: 2px solid #f6ead4;
   padding: 5px;
   border-radius: 15px;
+  height: 250px;
 }
 
 .destacados .destacados__imgcontainer .destacados__imgcontainer__img:hover {
@@ -469,6 +481,7 @@ footer ul li a {
   border-radius: 25px;
   -webkit-box-shadow: 7px 7px 7px #f6ead4;
           box-shadow: 7px 7px 7px #f6ead4;
+  height: 400px;
 }
 
 .tendencias .tendencias__imgcontainer .tendencias__imgcontainer__descripcion {
@@ -602,6 +615,7 @@ footer ul li a {
   border: 2px solid #f6ead4;
   padding: 5px;
   border-radius: 15px;
+  height: 250px;
 }
 
 .products__imgcontainer .products_imgcontainer_price {
@@ -862,6 +876,7 @@ footer ul li a {
   border-radius: 30px 20px 30px 20px;
   -webkit-box-shadow: 7px 7px 7px #f6ead4;
           box-shadow: 7px 7px 7px #f6ead4;
+  height: 400px;
 }
 
 @media (max-width: 767.98px) {
@@ -908,8 +923,18 @@ footer ul li a {
           justify-content: center;
 }
 
+.notFound img {
+  width: 250px;
+  height: 350px;
+}
+
 .notFound .notFound__items {
   text-align: center;
+}
+
+.notFound .notFound__items img {
+  width: 465px;
+  height: 190px;
 }
 
 .notFound .notFound__items h1 {

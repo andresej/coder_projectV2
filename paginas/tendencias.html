@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Gaby Moreno Accesorios - Tendencias</title>
     <meta name="description"
@@ -47,32 +48,32 @@
         </h1>
 
         <div class="tendencias__imgcontainer">
-            <img class="tendencias__imgcontainer__img" src="../imagenes/tendencias_1.jpeg" alt="famoso1">
-            <p class="tendencias__imgcontainer__descripcion">
+            <img class="tendencias__imgcontainer__img" data-aos="zoom-in-right" data-aos-delay="100" src="../imagenes/tendencias_1.jpeg" alt="famoso1">
+            <p class="tendencias__imgcontainer__descripcion" data-aos="zoom-in-up">
                 Cadenas gruesas y llamativas, lo más cool del 2021.
             </p>
         </div>
 
-        <div class="tendencias__imgcontainer">
-            <p class="tendencias__imgcontainer__descripcion">
+        <div class="tendencias__imgcontainer" >
+            <p class="tendencias__imgcontainer__descripcion" data-aos="zoom-in-up" data-aos-delay="100">
                 Al ritmo del mar, caracoles para sumar un detalle veraniego a tus prendas.
             </p>
-            <img class="tendencias__imgcontainer__img" src="../imagenes/tendencia_2.jpeg" alt="famoso2">
+            <img class="tendencias__imgcontainer__img" data-aos="zoom-in-left" src="../imagenes/tendencia_2.jpeg" alt="famoso2">
         </div>
 
         <div class="tendencias__imgcontainer">
-            <img class="tendencias__imgcontainer__img" src="../imagenes/tendencia_3.jpeg" alt="famoso3">
-            <p class="tendencias__imgcontainer__descripcion">
+            <img class="tendencias__imgcontainer__img" data-aos="zoom-in-right" data-aos-delay="100" src="../imagenes/tendencia_3.jpeg" alt="famoso3">
+            <p class="tendencias__imgcontainer__descripcion" data-aos="zoom-in-up">
                 Joyería animal inspirada en la naturaleza.
 
             </p>
         </div>
 
         <div class="tendencias__imgcontainer">
-            <p class="tendencias__imgcontainer__descripcion">
+            <p class="tendencias__imgcontainer__descripcion" data-aos="zoom-in-up">
                 Esferas relucientes y coloridas. Un clásico atemporal vuelve a tomar protagonismo.
             </p>
-            <img class="tendencias__imgcontainer__img" src="../imagenes/tendencia_4.jpg" alt="famoso2">
+            <img class="tendencias__imgcontainer__img" data-aos="zoom-in-left" src="../imagenes/tendencia_4.jpg" alt="famoso2">
         </div>
     </section>
 
@@ -121,7 +122,10 @@
 
 
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

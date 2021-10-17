@@ -25,30 +25,3 @@
     height: 400px;
 }
 
-@media (max-width: 767.98px) {
-    .sobremi {
-        display: flex;
-        flex-direction: column;
-        margin: 50px;
-        align-items: center;
-        
-
-        .sobremi__container {
-            margin: 25px;
-            padding: 2rem;
-            
-        }
-        
-    }
-}
-
-@media (max-width: 375px){
-    .imgSobremi{height: 300px;
-    width: 300px;
-    }
-    .sobremi__container__descripcion {
-        font-size: 2rem;
-        width: 300px;
-        
-    }
-}

@@ -54,39 +54,3 @@ footer {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    footer .navegacionFinal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 10rem;
-        text-align: center;
-
-    }
-
-    .irArriba {
-        height: 2.5rem;
-    }
-
-    .footerSocialMedia {
-        display: flex;
-        justify-content: center;
-
-    }
-}
-
-
-
-
-@media (max-width: 375px) {
-    .footerSocialMedia {
-        width: auto;
-    }
-}

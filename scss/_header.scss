@@ -1,3 +1,5 @@
+/*CSS RESET*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ html {
 html:focus-within {
     scroll-behavior: unset;
 }
-
+/*HEADER*/
 @keyframes float {
     0% {
        

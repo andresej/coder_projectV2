@@ -7,264 +7,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <title>Gaby Moreno Accesorios - 404</title>
+    <style>
+      /*HEADER*/
+ 
+  @keyframes float {
+    0% {
+      
+              transform: translatey(0px);
+    }
+    50% {
+      
+              transform: translatey(-20px);
+    }
+    100% {
+      
+              transform: translatey(0px);
+    }
+  }
+  
+  #inicio {
+    background-color: #f6ead4;
+    display: flex;
+    justify-content: space-between;
+    height: 155px;
+    align-items: flex-end;
+    border-top: solid 5px #b4a284;
+  }
+  
+  .whatsappMovible {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999999;
+    cursor: pointer;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 9s ease-in-out infinite;
+  }
+  
+  .whatsappMovible img {
+    height: 50px;
+  }
+  
+  .imagenLogo {
+    margin-left: 150px;
+    margin-bottom: 1rem;
+    height: 150px;
+  }
+  
+  .navPosition {
+    padding: 5rem;
+    width: 800px;
+  }
+  
+  .navPosition ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navPosition ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  
+  .navPosition ul li:hover {
+    cursor: pointer;
+    transform: translateY(3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  }
+  
+  .navegacionPrincipal li a {
+    text-decoration: none;
+    color: #b4a284;
+    font-size: 2.5rem;
+  }
+  
+  /*FOOTER*/
+  footer {
+    background-color: #f6ead4;
+    display: flex;
+    align-items: center;
+    color: #b4a284;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+  }
+  
+  footer ul li {
+    list-style-type: none;
+    margin: 1rem;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #b4a284;
+    font-size: 2rem;
+  }
+  
+  .footerLogo {
+    height: 100px;
+  }
+  
+  .footerSocialMedia {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .footerSocialMedia h3 {
+    margin: 5px;
+    font-size: 2rem;
+  }
+  
+  .footerSocialMedia img {
+    margin: 5px;
+    height: 30px;
+  }
+  
+  .irArriba {
+    width: 200px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 2rem;
+  }
+  
+  .irArriba a {
+    text-decoration: none;
+    color: #b09567;
+  }
+  .notFound {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin: 75px;
+    justify-content: center;
+  }
+  
+  .notFound img {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .notFound .notFound__items {
+    text-align: center;
+  }
+  
+  .notFound .notFound__items img {
+    width: 465px;
+    height: 190px;
+  }
+  
+  .notFound .notFound__items h1 {
+    font-size: 4rem;
+    color: #f6ead4;
+    text-shadow: 1px 1px 1px #ebebeb,
+   2px 2px 1px #ebebeb;
+  }
+  
+  .notFound .notFound__items p {
+    font-size: 2.5rem;
+    color: #f6ead4;
+  }
+  
+  .notFound .notFound__items button {
+    width: 150px;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #0098cf;
+    text-transform: uppercase;
+    background: #ffafba;
+    font-family: "Bebas Neue";
+    background: linear-gradient(to left top, #b4a284, white);
+    font-size: 20px;
+    border: solid;
+  }
+  
+  .notFound .notFound__items button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  }
+  
+  .notFound .notFound__items button:active {
+    transform: translateY(3px);
+  }
+  
+  </style>
 </head>
-<style>
-    /*HEADER*/
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-  50% {
-    -webkit-transform: translatey(-20px);
-            transform: translatey(-20px);
-  }
-  100% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-}
-@keyframes float {
-  0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-  50% {
-    -webkit-transform: translatey(-20px);
-            transform: translatey(-20px);
-  }
-  100% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-}
 
-#inicio {
-  background-color: #f6ead4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 155px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border-top: solid 5px #b4a284;
-}
-
-.whatsappMovible {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index: 999999;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transform: translatey(0px);
-          transform: translatey(0px);
-  -webkit-animation: float 9s ease-in-out infinite;
-          animation: float 9s ease-in-out infinite;
-}
-
-.whatsappMovible img {
-  height: 50px;
-}
-
-.imagenLogo {
-  margin-left: 150px;
-  margin-bottom: 1rem;
-  height: 150px;
-}
-
-.navPosition {
-  padding: 5rem;
-  width: 800px;
-}
-
-.navPosition ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navPosition ul li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.navPosition ul li:hover {
-  cursor: pointer;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-.navegacionPrincipal li a {
-  text-decoration: none;
-  color: #b4a284;
-  font-size: 2.5rem;
-}
-
-/*FOOTER*/
-footer {
-  background-color: #f6ead4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #b4a284;
-}
-
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 500px;
-}
-
-footer ul li {
-  list-style-type: none;
-  margin: 1rem;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #b4a284;
-  font-size: 2rem;
-}
-
-.footerLogo {
-  height: 100px;
-}
-
-.footerSocialMedia {
-  width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footerSocialMedia h3 {
-  margin: 5px;
-  font-size: 2rem;
-}
-
-.footerSocialMedia img {
-  margin: 5px;
-  height: 30px;
-}
-
-.irArriba {
-  width: 200px;
-  text-align: center;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  font-size: 2rem;
-}
-
-.irArriba a {
-  text-decoration: none;
-  color: #b09567;
-}
-.notFound {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 75px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.notFound img {
-  width: 250px;
-  height: 350px;
-}
-
-.notFound .notFound__items {
-  text-align: center;
-}
-
-.notFound .notFound__items img {
-  width: 465px;
-  height: 190px;
-}
-
-.notFound .notFound__items h1 {
-  font-size: 4rem;
-  color: #f6ead4;
-  text-shadow: 1px 1px 1px #ebebeb,
- 2px 2px 1px #ebebeb;
-}
-
-.notFound .notFound__items p {
-  font-size: 2.5rem;
-  color: #f6ead4;
-}
-
-.notFound .notFound__items button {
-  width: 150px;
-  height: 45px;
-  margin-top: 15px;
-  border-radius: 10px;
-  color: #0098cf;
-  text-transform: uppercase;
-  background: #ffafba;
-  font-family: "Bebas Neue";
-  background: -webkit-gradient(linear, right bottom, left top, from(#b4a284), to(white));
-  background: linear-gradient(to left top, #b4a284, white);
-  font-size: 20px;
-  border: solid;
-}
-
-.notFound .notFound__items button:hover {
-  cursor: pointer;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-.notFound .notFound__items button:active {
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-
-</style>
 <body>
     <header id="inicio" class="">
         <div class="whatsappMovible">

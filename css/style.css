@@ -666,7 +666,7 @@ footer ul li a {
           transform: translateY(3px);
 }
 
-/*Header*/
+/*Media Header*/
 @media (max-width: 767.98px) {
   #inicio {
     -webkit-box-orient: vertical;
@@ -733,7 +733,7 @@ footer ul li a {
   }
 }
 
-/*Footer*/
+/*Media Footer*/
 @media (max-width: 768px) {
   footer {
     display: -webkit-box;
@@ -814,7 +814,7 @@ footer ul li a {
   }
 }
 
-/*Index*/
+/*Media Index*/
 @media (max-width: 767.98px) {
   .presentacion__titulo {
     color: #f6ead4;
@@ -901,7 +901,7 @@ footer ul li a {
   }
 }
 
-/*Productos*/
+/*Media Productos*/
 @media (max-width: 767.98px) {
   .productos {
     height: 130rem;
@@ -956,7 +956,7 @@ footer ul li a {
   }
 }
 
-/*Tendencias*/
+/*Media Tendencias*/
 @media (max-width: 575.98px) {
   .tendencias {
     margin: 3rem;
@@ -1020,7 +1020,7 @@ footer ul li a {
   }
 }
 
-/*Sobre Mi*/
+/*Media Sobre Mi*/
 @media (max-width: 767.98px) {
   .sobremi {
     display: -webkit-box;
@@ -1052,7 +1052,7 @@ footer ul li a {
   }
 }
 
-/*Contacto*/
+/*Media Contacto*/
 @media (max-width: 767.98px) {
   .contenedord_datos {
     margin: 30px 30px auto 30px;

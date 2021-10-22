@@ -15,20 +15,21 @@ html {
 html:focus-within {
     scroll-behavior: unset;
 }
+
 /*HEADER*/
 @keyframes float {
     0% {
-       
+
         transform: translatey(0px);
     }
 
     50% {
-       
+
         transform: translatey(-20px);
     }
 
     100% {
-       
+
         transform: translatey(0px);
     }
 }
@@ -52,14 +53,16 @@ html:focus-within {
     overflow: hidden;
     transform: translatey(0px);
     animation: float 9s ease-in-out infinite;
+    color: #000030;
 
     img {
         height: 50px;
-       
+
     }
 
-
-
+    p {
+        text-align: center;
+    }
 }
 
 .imagenLogo {
@@ -97,4 +100,3 @@ html:focus-within {
     color: $colorSecundario;
     font-size: 2.5rem;
 }
-

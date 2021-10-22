@@ -13,6 +13,7 @@
         bottom: 10px;
         right: 10px;
         cursor: pointer;
+
     }
 
     .imagenLogo {
@@ -104,7 +105,15 @@
     }
 }
 
+@media (max-width: 575.98px) {
+    .irArriba {
 
+        position: relative;
+        right: 24rem;
+        top: 8rem;
+    }
+
+}
 
 
 @media (max-width: 375px) {
@@ -203,6 +212,13 @@
 }
 
 @media (max-width: 375px) {
+
+    .presentacion .presentacion__titulo {
+
+        font-size: 3rem;
+       
+    }
+
     .ejemplos__contenedor .ejemplos__contenedor__img {
         margin: 0;
     }
@@ -403,10 +419,12 @@
         display: flex;
         flex-direction: column;
         height: 700px;
+        align-items: center;
 
         .contenedord_datos {
-
+            text-align: center;
             margin: 10px;
+            width: 400px;
         }
 
     }
@@ -420,6 +438,12 @@
 
 @media (max-width: 375px) {
     .formulario {
+        width: 350px;
+    }
+
+    .contenedord .contenedord_datos {
+        text-align: center;
+        margin: 10px;
         width: 350px;
     }
 }

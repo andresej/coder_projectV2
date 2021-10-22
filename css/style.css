@@ -75,10 +75,15 @@ html:focus-within {
           transform: translatey(0px);
   -webkit-animation: float 9s ease-in-out infinite;
           animation: float 9s ease-in-out infinite;
+  color: #000030;
 }
 
 .whatsappMovible img {
   height: 50px;
+}
+
+.whatsappMovible p {
+  text-align: center;
 }
 
 .imagenLogo {
@@ -229,7 +234,7 @@ footer ul li a {
 
 .presentacion .presentacion__titulo {
   color: #f6ead4;
-  font-size: 3.5rem;
+  font-size: 4rem;
   word-spacing: 0.5rem;
   margin: 20px;
   font-family: 'WindSong', cursive;
@@ -448,7 +453,7 @@ footer ul li a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .navegacionFinal {
@@ -524,7 +529,7 @@ footer ul li a {
 }
 
 .formulario .formulario__input:focus {
-  height: 60px;
+  height: 80px;
 }
 
 .contenedord {
@@ -570,6 +575,9 @@ footer ul li a {
   display: -ms-flexbox;
   display: flex;
   margin: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sobremi .sobremi__container {
@@ -589,7 +597,7 @@ footer ul li a {
 }
 
 .sobremi .sobremi__container .sobremi__container__descripcion {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .imgSobremi {
@@ -777,6 +785,14 @@ footer ul li a {
   }
 }
 
+@media (max-width: 575.98px) {
+  .irArriba {
+    position: relative;
+    right: 24rem;
+    top: 8rem;
+  }
+}
+
 @media (max-width: 375px) {
   footer {
     display: -webkit-box;
@@ -877,6 +893,9 @@ footer ul li a {
 }
 
 @media (max-width: 375px) {
+  .presentacion .presentacion__titulo {
+    font-size: 3rem;
+  }
   .ejemplos__contenedor .ejemplos__contenedor__img {
     margin: 0;
   }
@@ -1072,9 +1091,14 @@ footer ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 700px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contenedord .contenedord_datos {
+    text-align: center;
     margin: 10px;
+    width: 400px;
   }
   .formulario {
     margin: 30px auto;
@@ -1083,6 +1107,11 @@ footer ul li a {
 
 @media (max-width: 375px) {
   .formulario {
+    width: 350px;
+  }
+  .contenedord .contenedord_datos {
+    text-align: center;
+    margin: 10px;
     width: 350px;
   }
 }

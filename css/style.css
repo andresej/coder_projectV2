@@ -362,7 +362,7 @@ footer ul li a {
 /*PRODUCTOS*/
 .bodyProductos {
   background-color: #b4a284;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .navegacionProductos {
@@ -409,7 +409,11 @@ footer ul li a {
           justify-content: center;
 }
 
-.products__imgcontainer .products__imgcontainer__img {
+.products__imgcontainer .container_one {
+  position: relative;
+}
+
+.products__imgcontainer .container_one .products__imgcontainer__img {
   border: 2px solid #f6ead4;
   padding: 5px;
   border-radius: 15px;
@@ -417,7 +421,30 @@ footer ul li a {
   height: 250px;
 }
 
-.products__imgcontainer .products_imgcontainer_price {
+.products__imgcontainer .container_one .image1 {
+  display: block;
+}
+
+.products__imgcontainer .container_one .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.products__imgcontainer .container_one .overlay .image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.products__imgcontainer .container_one .products_imgcontainer_price {
   font-size: 2rem;
   text-align: center;
   border: 2px solid #f6ead4;
@@ -425,35 +452,8 @@ footer ul li a {
   border-radius: 15px;
 }
 
-.container_one {
-  position: relative;
-}
-
-.image1 {
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.container_one:hover .overlay {
-  opacity: 1;
-}
-
-.image2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.products__imgcontainer .container_one:hover .overlay {
+  opacity: 0.5;
 }
 
 .navegacionFinal {
@@ -476,7 +476,16 @@ footer ul li a {
   color: #f6ead4;
 }
 
-.formulario {
+.contenedord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedord .formulario {
   background-color: #f6ead4;
   width: 400px;
   padding: 30px;
@@ -489,7 +498,7 @@ footer ul li a {
           box-shadow: 7px 13px 7px #00000033;
 }
 
-.formulario .formulario__input {
+.contenedord .formulario .formulario__input {
   width: 100%;
   background-color: #f6ead4;
   padding: 10px;
@@ -500,7 +509,7 @@ footer ul li a {
   font-family: "Bebas Neue";
 }
 
-.formulario .formulario__button {
+.contenedord .formulario .formulario__button {
   width: 100%;
   height: 45px;
   margin-top: 15px;
@@ -515,7 +524,7 @@ footer ul li a {
   border: none;
 }
 
-.formulario .formulario__button:hover {
+.contenedord .formulario .formulario__button:hover {
   cursor: pointer;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -523,22 +532,13 @@ footer ul li a {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.formulario .formulario__button:active {
+.contenedord .formulario .formulario__button:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
 }
 
-.formulario .formulario__input:focus {
+.contenedord .formulario .formulario__input:focus {
   height: 80px;
-}
-
-.contenedord {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contenedord .contenedord_datos {
@@ -600,7 +600,7 @@ footer ul li a {
   font-size: 2.2rem;
 }
 
-.imgSobremi {
+.sobremi .imgSobremi {
   border-radius: 30px 20px 30px 20px;
   -webkit-box-shadow: 7px 7px 7px #f6ead4;
           box-shadow: 7px 7px 7px #f6ead4;

@@ -2,9 +2,7 @@
 
 .bodyProductos {
     background-color: $colorSecundario;
-    font-family: 'Bebas Neue', cursive;
-
-
+    font-family: "Bebas Neue", cursive;
 }
 
 .navegacionProductos {
@@ -12,7 +10,6 @@
     padding: 0;
     font-size: 3rem;
     text-decoration: none;
-    
 }
 
 .productos {
@@ -27,7 +24,6 @@
     }
 }
 
-
 .productsStyle {
     margin: 40px;
     color: $colorPrimario;
@@ -38,7 +34,6 @@
     }
 }
 
-
 .products__imgcontainer {
     height: 250px;
     display: grid;
@@ -48,60 +43,54 @@
     margin: 30px 50px 0 50px;
     justify-content: center;
 
-    .products__imgcontainer__img {
-        border: 2px solid $colorPrimario;
-        padding: 5px;
-        border-radius: 15px;
-        width: 250px;
-        height: 250px;
+    .container_one {
+        position: relative;
+
+        .products__imgcontainer__img {
+            border: 2px solid $colorPrimario;
+            padding: 5px;
+            border-radius: 15px;
+            width: 250px;
+            height: 250px;
+        }
+
+        .image1 {
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: 0.5s ease;
+
+            .image2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .products_imgcontainer_price {
+            font-size: 2rem;
+            text-align: center;
+            border: 2px solid $colorPrimario;
+            padding: 1px;
+            border-radius: 15px;
+        }
     }
-
-    .products_imgcontainer_price {
-        font-size: 2rem;
-        text-align: center;
-        border: 2px solid $colorPrimario;
-        padding: 1px;
-        border-radius: 15px
+    .container_one:hover .overlay {
+        opacity: 0.5;
     }
-
 }
 
-.container_one {
-    position: relative;
 
-}
-
-.image1 {
-    display: block;
-
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-
-}
-
-.container_one:hover .overlay {
-    opacity: 1;
-}
-
-.image2 {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
 
 .navegacionFinal {
     padding: 0;
     margin: 0;
 }
-

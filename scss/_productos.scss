@@ -74,7 +74,6 @@
                 transform: translate(-50%, -50%);
             }
         }
-
         .products_imgcontainer_price {
             font-size: 2rem;
             text-align: center;
@@ -84,11 +83,9 @@
         }
     }
     .container_one:hover .overlay {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
-
-
 
 .navegacionFinal {
     padding: 0;

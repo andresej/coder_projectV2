@@ -453,6 +453,28 @@ footer ul li a {
   border-radius: 15px;
 }
 
+.products__imgcontainer .container_one .products__imgcontainer__cartcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__imgcontainer .container_one .products__imgcontainer__cartcontainer .products__imgcontainer__cartcontainer__shopping {
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid #f6ead4;
+  padding: 1px;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.products__imgcontainer .container_one .products__imgcontainer__cartcontainer .imgCart {
+  height: 30px;
+}
+
 .products__imgcontainer .container_one:hover .overlay {
   opacity: 1;
 }

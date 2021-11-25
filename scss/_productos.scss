@@ -81,6 +81,21 @@
             padding: 1px;
             border-radius: 15px;
         }
+        .products__imgcontainer__cartcontainer{
+            display: flex;
+            justify-content: center;
+
+            .products__imgcontainer__cartcontainer__shopping {
+                font-size: 2rem;
+                text-align: center;
+                border: 2px solid $colorPrimario;
+                padding: 1px;
+                border-radius: 15px;
+                width: 200px;
+            }
+            .imgCart{height: 30px;}
+        }
+        
     }
     .container_one:hover .overlay {
         opacity: 1;
